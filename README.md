@@ -52,9 +52,6 @@ Create an App Password (for accounts with 2FA) in Google Account Security Settin
 ⚙️ Configuration
 Edit main.py and set your credentials:
 
-python
-Copy
-Edit
 EMAIL_ACCOUNT = "youremail@gmail.com"
 EMAIL_PASSWORD = "your-app-password"
 FILTER_SENDER = "sender@example.com"
@@ -70,20 +67,20 @@ python main.py
 
 The bot will:
 
-Connect to Gmail
+- Connect to Gmail
 
-Start Telegram bot polling
+- Start Telegram bot polling
 
-Send a startup notification
+- Send a startup notification
 
-Check for new filtered emails every CHECK_INTERVAL seconds
+- Check for new filtered emails every CHECK_INTERVAL seconds
 
 🛡 Security Notes
-Do not hardcode real passwords in public repos – use environment variables or .env files.
+- Do not hardcode real passwords in public repos – use environment variables or .env files.
 
-This script currently disables SSL certificate verification for IMAP. Enable it in production.
+- This script currently disables SSL certificate verification for IMAP. Enable it in production.
 
-Keep your Telegram Bot Token and Gmail credentials private.
+- Keep your Telegram Bot Token and Gmail credentials private.
 
 📄 License
 MIT License – free to use, modify, and distribute.
